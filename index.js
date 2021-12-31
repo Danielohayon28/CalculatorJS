@@ -57,6 +57,11 @@ class Calculator {
         {
             this.prevContent.innerText =` ${this.prevOperand} ${this.operation}`;
         }
+        if(this.operation == undefined )
+        {
+            this.prevContent.innerText = ''
+        }
+        
     }
 }
 const currentContent  =document.querySelector('[data-current]')
@@ -91,7 +96,7 @@ equalButton.addEventListener('click', async button => {
     swpai.style.top=num +"px";
     swpai.style.right=num2 + "px";
     swpai.textContent =" Hello from : ";
-    const name1 = await getSwapiName();
+    const name1 = getSwapiName();
     swpai.textContent+=name1;
     console.log(name1);
     calculator.compute()
