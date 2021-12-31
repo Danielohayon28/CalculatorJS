@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" id="switchCss" href="">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {bottom: 0; font-size: 11px; text-align: center; }
+    .attribution a {bottom: 0; color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="swapiApi" swapiApi ></div>
+<div class="calcuatur">
+  <div class="numbers">
+    <div class="num">1</div>
+    <div class="num">2</div>
+    <div class="num">3</div>
+  </div>
+
+  <div class="upper">
+    <div class="inline left">calc</div>
+    <div class="inline middle">THEME</div>
+    <div class="inline right">
+      <button id="changeBtn" > <div class="ball" ball ></div></button>
+      </div>
+  </div>
+  <div class="top">
+        <div id="content"> 
+            <div class="prev-content" data-prev></div>
+            <div id="current-content" class="current-content" data-current></div>
+        </div>
+  </div>
+  <div class="main">
+    <div class="row">
+        <div class="boxing"><button class="Btn" data-number>7</button></div>
+        <div class="boxing"><button class="Btn" data-number>8</button></div>
+        <div class="boxing"><button class="Btn" data-number >9</button></div>
+        <div class="boxing delBtn"><button class="Btn blueBtn" data-delete>DEL</button></div>
+    </div>
+    <div class="row">
+        <div class="boxing"><button class="Btn"data-number >4</button></div>
+        <div class="boxing"><button class="Btn" data-number>5</button></div>
+        <div class="boxing"><button class="Btn" data-number>6</button></div>
+        <div class="boxing"><button class="Btn" data-operation>+</button></div>
+    </div>
+    <div class="row">
+        <div class="boxing"><button class="Btn" data-number>1</button></div>
+        <div class="boxing"><button class="Btn" data-number>2</button></div>
+        <div class="boxing"><button class="Btn" data-number>3</button></div>
+        <div class="boxing"><button class="Btn" data-operation>-</button></div>
+    </div>
+    <div class="row">
+      <div class="boxing"><button class="Btn" data-number >.</button></div>
+      <div class="boxing"><button class="Btn" data-number>0</button></div>
+      <div class="boxing"><button class="Btn" data-operation>/</button></div>
+      <div class="boxing"><button class="Btn" data-operation>*</button></div>
+    </div>
+    <div class="row">
+      <div class="boxing bigBox one"><button class="Btn blueBtn" data-clear>RESET</button></div>
+      <div class="boxing bigBox two"><button class="Btn redBtn" data-equale>=</button></div>
+    </div>
+  </div>
+</div>
+ 
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Daniel Ohayon</a>.
+  </div>
+</body>
+<script src="index.js" ></script>
+</html>
