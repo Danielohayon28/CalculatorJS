@@ -88,25 +88,17 @@ operationButton.forEach(button =>  {
     })
 })
 
-equalButton.addEventListener('click', async button => {
-    let num= Math.floor(Math.random() * 400 +50 );
-    console.log(num);
-    let num2= Math.floor(Math.random() * 400 +50);
-    console.log(num2);
-    swpai.style.top=num +"px";
-    swpai.style.right=num2 + "px";
-    swpai.textContent =" Hello from : ";
-    const name1 = getSwapiName();
-    swpai.textContent+=name1;
-    console.log(name1);
+equalButton.addEventListener('click',button => {
     calculator.compute()
     calculator.updateDisplay()
+    getSwapiName ()
     
 })
 
 clearAllButton.addEventListener('click', button => {
     calculator.clear()
     calculator.updateDisplay()
+   
 })
 
 deleteButton.addEventListener('click', button => {
@@ -141,14 +133,14 @@ changeThemebtn.addEventListener('click', () => {
 
 async function getSwapiName () {
     let num= Math.floor(Math.random() * 3 );
-    console.log(num);
     let num2= Math.floor(Math.random() * 5 +1 );
-    console.log(num2);
     const arr= ['planets' , 'people'  , 'films'  ];
     const req = await fetch(`https://swapi.dev/api/${arr[num]}/${num2}/`);
-    const res = await req.json();
-const name = res.name;
-console.log(name);    
-return name;
-
+    const res = await req.json();   
+    let num3= Math.floor(Math.random() * 400 +50 );
+    let num4= Math.floor(Math.random() * 400 +50);
+    swpai.style.top=num3 +"px";
+    swpai.style.right=num4 + "px";
+    swpai.textContent =" Hello from : "; 
+    swpai.textContent +=  res.name;
 }
