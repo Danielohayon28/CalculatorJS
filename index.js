@@ -111,24 +111,24 @@ deleteButton.addEventListener('click', button => {
 const ball = document.querySelector('ball');
 const changeThemebtn = document.getElementById('changeBtn')
 var i=1;
-document.getElementById('switchCss').href = 'style.css';
+document.getElementById('switchCss').href = 'styles/style.css';
 changeThemebtn.addEventListener('click', () => {
    if(i % 3 === 0)
    {
-        document.getElementById('switchCss').href = 'style.css';
+        document.getElementById('switchCss').href = 'styles/style.css';
         i++;
         return
    }
    if(i % 3 === 1)
    {
        i++;
-   document.getElementById('switchCss').href = 'style1.css';
+   document.getElementById('switchCss').href = 'styles/style1.css';
    return
    }
    if(i % 3 === 2)
    {
        i++;
-   document.getElementById('switchCss').href = 'style2.css';
+   document.getElementById('switchCss').href = 'styles/style2.css';
    return
    }
 })
